@@ -79,7 +79,7 @@ class _UsersListScreenState extends ConsumerState<UsersListScreen> {
               final user = users[index];
               return UserCard(
                 user: user,
-                onTap: () => context.go('/users/${user.id}', extra: user),
+                onTap: () => context.push('/users/${user.id}', extra: user),
               );
             },
           ),
